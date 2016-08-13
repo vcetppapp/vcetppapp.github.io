@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+  <title>Parallax Template - Materialize</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script type="text/javascript" src="http://code.jquery.com/color/jquery.color-2.1.2.js"></script>
+<script>
+$(document).ready(function() {
+    $('select').material_select();
+});
+$(".button-collapse").sideNav();
+function controller()
+{
+var v = document.getElementById("select").value;
+var url,i1,i2,i3,i4;
+switch(parseInt(v))
+{
+case 1: url = "https://docs.google.com/forms/d/e/1FAIpQLSfr_iWiYX3oS4Aw2PUrz1BYaNT1vtBngTwJ-kbWVk3b7hdyFw/formResponse";
+		i1= "entry.2030519372";
+		i2= "entry.809779634";
+		i3= "[,,&quot;4702927227812652869&quot;]";
+		i4= "4702927227812652869";
+		break;
+case 2: url = "https://docs.google.com/forms/d/e/1FAIpQLScLtujG9NwlhNVKnEX8RNmD24AhVkLe6oR1-Ew5D289KSXneA/formResponse";
+		i1 = "entry.946234596";
+		i2 = "entry.1692214434";
+		i3 = "[,,&quot;4894258463701161028&quot;]";
+		i4 = "4894258463701161028";
+		break;
+case 3: url = "https://docs.google.com/forms/d/e/1FAIpQLSdbtqheGtoLbWVJGn4VgOv63HozxO-skN0Vu8Fp8PgUxN52iA/formResponse";
+		i1 = "entry.97496887";
+		i2 = "entry.119267698";
+		i3 = "[,,&quot;511909408355622407&quot;]";
+		i4 = "511909408355622407";
+		break;
+case 4: url = "https://docs.google.com/forms/d/e/1FAIpQLScKZJYfDuit5pHJNAgyGWy-YZr0GUCIJ6FiLG9y399mDXKBZw/formResponse";
+		i1 = "entry.1284893901";
+		i2 = "entry.1516260886";
+		i3 = "[,,&quot;-3877375224029281329&quot;]";
+		i4 = "-3877375224029281329";
+		break;
+case 5: url = "https://docs.google.com/forms/d/e/1FAIpQLSfx-SPBz8s6sn9ZePBTH1V8xqiYzGQ-h6Cgi20S4peMW2g6jA/formResponse";
+		i1 = "entry.1318381529";
+		i2 = "entry.486273370";
+		i3 = "[,,&quot;-7423895074786716681&quot;]";
+		i4 = "-7423895074786716681";
+		break;
+case 6: url = "https://docs.google.com/forms/d/e/1FAIpQLSdShPVwhs6Ncoe-imYQPBcSKoUi--dnbxEnN-HXPbaZFRvAHQ/formResponse";
+		i1 = "entry.182009269";
+		i2 = "entry.972382810";
+		i3 = "[,,&quot;-2915544257699845417&quot;]";
+		i4 = "-2915544257699845417";
+		break;
+case 7: url = "https://docs.google.com/forms/d/e/1FAIpQLScNWy8QNDl12lkJbBrQMBZiIpcBcdlLMALMdDe3NXBvqPL4IA/formResponse";
+		i1 = "entry.2032085351";
+		i2 = "entry.1782545087";
+		i3 = "[,,&quot;-1279275444057283215&quot;]";
+		i4 = "-1279275444057283215";
+		break;
+}
+document.getElementById("form").action = url;
+document.getElementById("textarea1").name = i1;
+document.getElementById("textarea2").name = i2;
+document.getElementById("draft").value = i3;
+document.getElementById("fb").value = i4;
+}
+</script>
+<style>
+@media only screen and (max-device-width: 540px) {
+#blogo { 
+font-size:60%;
+}
+#symp{
+font-size:75%;
+}
+#symp1{
+font-size:35%;
+}
+}
+</style>
+</head>
+<body>
+  <nav class="blue darken-3" role="navigation">
+    <div class="nav-wrapper container">
+      <a id="blogo" href="#" class="white-text center-align center brand-logo">Velammal College of Engineering and Technology, Madurai</a>
+     
+    </div>
+  </nav>
+
+  <div id="index-banner" class="parallax-container center-align">
+    <div class="section no-pad-bot">
+      <div class="container center-align">
+        <br/><br/>
+		<br/>
+	    <h1 id="symp" class="header center orange-text text-lighten-2">Placement Preparation App Content Panel</h1>
+        <div class="row center">
+          <h5 id="symp1" class="header col s12 light">Training and Placement Cell<br>VCET</h5>
+        </div>
+      </div>
+    </div>
+    <div class="parallax"><img src="background3.jpg" alt="Unsplashed background img 1"></div>
+  </div>
+
+
+  <div class="container">
+        <div id="qa" class="row">
+        <div class="col s12 center">
+<header class="info">
+<h2>Add new Q&A </h2>
+</header>
+<script type="text/javascript">var submitted=false;</script>
+<iframe name="hidden_iframe" id="hidden_iframe"
+style="display:none;" onload="if(submitted)
+{Materialize.toast('Sending to the Database..!', 4000,'',function(){alert('Successfully Added')});}"></iframe>
+<form target="hidden_iframe" onsubmit="submitted=true;" id="form" action="https://docs.google.com/forms/d/1hp-4Y0NZyuvxQmbD-qzdRnwI_jQjCRjq3QOFSiqtaLE/formResponse" method="POST" id="ss-form"><ol role="list" class="ss-question-list center" style="padding-left: 0">
+<center>
+<div class="ss-form-question errorbox-good" role="listitem">
+<div dir="auto" class="ss-item ss-item-required ss-text">
+<div class="ss-form-entry">
+<div class="input-field col s12 bold">
+    <select id="select" onchange="controller();">
+      <option value="" disabled selected>Choose the Category</option>
+      <option value="1">Puzzles</option>
+      <option value="2">C Aptitude</option>
+      <option value="3">Data Structures</option>
+	        <option value="4">DBMS</option>
+			      <option value="5">OS</option>
+				        <option value="6">Software Engineering</option>
+						<option value="7">C Technical</option>
+    </select>
+  </div>
+  </div></div></div> 
+<div class="ss-form-question errorbox-good" role="listitem">
+<div dir="auto" class="ss-item ss-item-required ss-text"><div class="ss-form-entry">
+<label class="desc header col s12 bold" style="font-size: 100%;"for="textarea1">Question</label><div class="error-message" id="894909694_errorMessage"></div>
+<textarea id="textarea1" class="materialize-textarea"></textarea>
+</div>
+</div>
+</div> 
+<div class="ss-form-question errorbox-good" role="listitem">
+<div dir="auto" class="ss-item ss-item-required ss-text">
+<div class="ss-form-entry">
+<label class="desc header col s12 bold" style="font-size: 100%;" for="textarea2">Answer</label><div class="error-message" id="894909694_errorMessage"></div>
+<textarea id="textarea2" class="materialize-textarea"></textarea>
+</div></div></div> 
+<input type="hidden" id="draft" name="draftResponse" value="[,,&quot;9171703589401803839&quot;]">
+<input type="hidden" name="pageHistory" value="0">
+<input type="hidden" name="fvv" value="0">
+<br>
+<div class="center ss-form-entry">
+</div>
+<input type="hidden" id="fb" name="fbzx" value="9171703589401803839">
+<div class="ss-item ss-navigate"><table id="navigation-table"><tbody><tr><td class="ss-form-entry goog-inline-block" id="navigation-buttons" dir="ltr">
+ <center>
+ <button  id="saveForm" style="text-align:center;" name="saveForm" class="btTxt submit btn-large waves-effect waves-light align-center orange lighten-1"
+    type="submit" value="Submit" name="action">Submit
+    <i class="material-icons right">send</i>
+  </button>
+  </center>
+</td>
+</tr></tbody></table></div>
+</center>
+</form>
+        </div>
+      </div>
+
+    <div class="section">
+      <!--   Icon Section   -->
+      <div class="row">
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center brown-text"><i class="material-icons">flash_on</i></h2>
+            <h5 class="center">Speeds up development</h5>
+
+            <p class="light">We did most of the heavy lifting for you to provide a default stylings that incorporate our custom components. Additionally, we refined animations and transitions to provide a smoother experience for developers.</p>
+          </div>
+        </div>
+
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center brown-text"><i class="material-icons">group</i></h2>
+            <h5 class="center">User Experience Focused</h5>
+
+            <p class="light">By utilizing elements and principles of Material Design, we were able to create a framework that incorporates components and animations that provide more feedback to users. Additionally, a single underlying responsive system across all platforms allow for a more unified user experience.</p>
+          </div>
+        </div>
+
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center brown-text"><i class="material-icons">settings</i></h2>
+            <h5 class="center">Easy to work with</h5>
+
+            <p class="light">We have provided detailed documentation as well as specific code examples to help new users get started. We are also always open to feedback and can answer any questions a user may have about Materialize.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+  <div class="parallax-container valign-wrapper">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <div class="row center">
+          <h5 class="header col s12 light">A modern responsive front-end framework based on Material Design</h5>
+        </div>
+      </div>
+    </div>
+    <div class="parallax"><img src="background2.jpg" alt="Unsplashed background img 2"></div>
+  </div>
+
+  <div class="container">
+    <div class="section">
+
+      <div class="row">
+        <div class="col s12 center">
+          <h3><i class="mdi-content-send brown-text"></i></h3>
+          <h4>Contact Us</h4>
+          <p class="left-align light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam scelerisque id nunc nec volutpat. Etiam pellentesque tristique arcu, non consequat magna fermentum ac. Cras ut ultricies eros. Maecenas eros justo, ullamcorper a sapien id, viverra ultrices eros. Morbi sem neque, posuere et pretium eget, bibendum sollicitudin lacus. Aliquam eleifend sollicitudin diam, eu mattis nisl maximus sed. Nulla imperdiet semper molestie. Morbi massa odio, condimentum sed ipsum ac, gravida ultrices erat. Nullam eget dignissim mauris, non tristique erat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+  <div class="parallax-container valign-wrapper">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <div class="row center">
+          <h5 class="header col s12 light">A modern responsive front-end framework based on Material Design</h5>
+        </div>
+      </div>
+    </div>
+    <div class="parallax"><img src="background3.jpg" alt="Unsplashed background img 3"></div>
+  </div>
+
+  <footer class="page-footer blue darken-3">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">Company Bio</h5>
+          <p class="grey-text text-lighten-4">We are a team of college students working on this project like it's our full time job. Any amount would help support and continue development on this project and is greatly appreciated.</p>
+
+
+        </div>
+        <div class="col l3 s12">
+          <h5 class="white-text">Settings</h5>
+          <ul>
+            <li><a class="white-text" href="#!">Link 1</a></li>
+            <li><a class="white-text" href="#!">Link 2</a></li>
+            <li><a class="white-text" href="#!">Link 3</a></li>
+            <li><a class="white-text" href="#!">Link 4</a></li>
+          </ul>
+        </div>
+        <div class="col l3 s12">
+          <h5 class="white-text">Connect</h5>
+          <ul>
+            <li><a class="white-text" href="#!">Link 1</a></li>
+            <li><a class="white-text" href="#!">Link 2</a></li>
+            <li><a class="white-text" href="#!">Link 3</a></li>
+            <li><a class="white-text" href="#!">Link 4</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+      Made by <a class="brown-text text-lighten-3" href="http://materializecss.com">Materialize</a>
+      </div>
+    </div>
+  </footer>
+
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+
+  </body>
+</html>
