@@ -14,6 +14,13 @@
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 <script type="text/javascript" src="http://code.jquery.com/color/jquery.color-2.1.2.js"></script>
 <script>
+//paste this code under head tag or in a seperate js file.
+	// Wait for window load
+	$(window).load(function() {
+		// Animate loader off screen
+		$(".se-pre-con").fadeOut("slow");
+	});
+
 $(document).ready(function() {
     $('select').material_select();
 });
@@ -89,6 +96,7 @@ font-size:35%;
 </style>
 </head>
 <body>
+<div id="ses" class="se-pre-con"></div>
   <nav class="blue darken-3" role="navigation">
     <div class="nav-wrapper container">
       <a id="blogo" href="#" class="white-text center-align center brand-logo">Velammal College of Engineering and Technology, Madurai</a>
@@ -124,6 +132,26 @@ style="display:none;" onload="if(submitted)
 <form target="hidden_iframe" onsubmit="submitted=true;" id="form" action="https://docs.google.com/forms/d/1hp-4Y0NZyuvxQmbD-qzdRnwI_jQjCRjq3QOFSiqtaLE/formResponse" method="POST" id="ss-form"><ol role="list" class="ss-question-list center" style="padding-left: 0">
 <center>
 <div class="ss-form-question errorbox-good" role="listitem">
+<div dir="auto" class="ss-item ss-item-required ss-text"><div class="ss-form-entry">
+  <br/>
+<label class="desc header col s12 bold" style="font-size: 100%;"for="textarea1">Question</label><div class="error-message" id="894909694_errorMessage"></div>
+<textarea id="textarea1" class="materialize-textarea"></textarea>
+</div>
+</div>
+</div> 
+<div class="ss-form-question errorbox-good" role="listitem">
+<div dir="auto" class="ss-item ss-item-required ss-text">
+<div class="ss-form-entry">
+<label class="desc header col s12 bold" style="font-size: 100%;" for="textarea2">Answer</label><div class="error-message" id="894909694_errorMessage"></div>
+<textarea id="textarea2" class="materialize-textarea"></textarea>
+</div></div></div> 
+<input type="hidden" id="draft" name="draftResponse" value="[,,&quot;9171703589401803839&quot;]">
+<input type="hidden" name="pageHistory" value="0">
+<input type="hidden" name="fvv" value="0">
+<div class="center ss-form-entry">
+</div>
+<input type="hidden" id="fb" name="fbzx" value="9171703589401803839">
+<div class="ss-form-question errorbox-good" role="listitem">
 <div dir="auto" class="ss-item ss-item-required ss-text">
 <div class="ss-form-entry">
 <div class="input-field col s12 bold">
@@ -139,26 +167,7 @@ style="display:none;" onload="if(submitted)
     </select>
   </div>
   </div></div></div> 
-<div class="ss-form-question errorbox-good" role="listitem">
-<div dir="auto" class="ss-item ss-item-required ss-text"><div class="ss-form-entry">
-<label class="desc header col s12 bold" style="font-size: 100%;"for="textarea1">Question</label><div class="error-message" id="894909694_errorMessage"></div>
-<textarea id="textarea1" class="materialize-textarea"></textarea>
-</div>
-</div>
-</div> 
-<div class="ss-form-question errorbox-good" role="listitem">
-<div dir="auto" class="ss-item ss-item-required ss-text">
-<div class="ss-form-entry">
-<label class="desc header col s12 bold" style="font-size: 100%;" for="textarea2">Answer</label><div class="error-message" id="894909694_errorMessage"></div>
-<textarea id="textarea2" class="materialize-textarea"></textarea>
-</div></div></div> 
-<input type="hidden" id="draft" name="draftResponse" value="[,,&quot;9171703589401803839&quot;]">
-<input type="hidden" name="pageHistory" value="0">
-<input type="hidden" name="fvv" value="0">
-<br>
-<div class="center ss-form-entry">
-</div>
-<input type="hidden" id="fb" name="fbzx" value="9171703589401803839">
+
 <div class="ss-item ss-navigate"><table id="navigation-table"><tbody><tr><td class="ss-form-entry goog-inline-block" id="navigation-buttons" dir="ltr">
  <center>
  <button  id="saveForm" style="text-align:center;" name="saveForm" class="btTxt submit btn-large waves-effect waves-light align-center orange lighten-1"
