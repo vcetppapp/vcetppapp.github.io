@@ -4,8 +4,6 @@
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
   <title>Parallax Template - Materialize</title>
-
-  <!-- CSS  -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
   <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
@@ -18,9 +16,8 @@ $(document).ready(function() {
     $('select').material_select();
 });
 $(".button-collapse").sideNav();
-function controller()
+function controller(v)
 {
-var v = document.getElementById("select").value;
 var url,i1,i2,i3,i4;
 switch(parseInt(v))
 {
@@ -92,7 +89,6 @@ font-size:35%;
   <nav class="blue darken-3" role="navigation">
     <div class="nav-wrapper container">
       <a id="blogo" href="#" class="white-text center-align center brand-logo">Velammal College of Engineering and Technology, Madurai</a>
-     
     </div>
   </nav>
 
@@ -124,22 +120,6 @@ style="display:none;" onload="if(submitted)
 <form target="hidden_iframe" onsubmit="submitted=true;" id="form" action="https://docs.google.com/forms/d/1hp-4Y0NZyuvxQmbD-qzdRnwI_jQjCRjq3QOFSiqtaLE/formResponse" method="POST" id="ss-form"><ol role="list" class="ss-question-list center" style="padding-left: 0">
 <center>
 <div class="ss-form-question errorbox-good" role="listitem">
-<div dir="auto" class="ss-item ss-item-required ss-text">
-<div class="ss-form-entry">
-<div class="input-field col s12 bold">
-    <select id="select" onchange="controller();">
-      <option value="" disabled selected>Choose the Category</option>
-      <option value="1">Puzzles</option>
-      <option value="2">C Aptitude</option>
-      <option value="3">Data Structures</option>
-	        <option value="4">DBMS</option>
-			      <option value="5">OS</option>
-				        <option value="6">Software Engineering</option>
-						<option value="7">C Technical</option>
-    </select>
-  </div>
-  </div></div></div> 
-<div class="ss-form-question errorbox-good" role="listitem">
 <div dir="auto" class="ss-item ss-item-required ss-text"><div class="ss-form-entry">
 <label class="desc header col s12 bold" style="font-size: 100%;"for="textarea1">Question</label><div class="error-message" id="894909694_errorMessage"></div>
 <textarea id="textarea1" class="materialize-textarea"></textarea>
@@ -155,12 +135,36 @@ style="display:none;" onload="if(submitted)
 <input type="hidden" id="draft" name="draftResponse" value="[,,&quot;9171703589401803839&quot;]">
 <input type="hidden" name="pageHistory" value="0">
 <input type="hidden" name="fvv" value="0">
-<br>
 <div class="center ss-form-entry">
 </div>
 <input type="hidden" id="fb" name="fbzx" value="9171703589401803839">
 <div class="ss-item ss-navigate"><table id="navigation-table"><tbody><tr><td class="ss-form-entry goog-inline-block" id="navigation-buttons" dir="ltr">
+ <div class="col s12 ss-form-question errorbox-good">
+<div dir="auto" class="ss-item ss-item-required ss-text">
+<div class="center ss-form-entry">
+<div class="input-field col s12 bold">
+      <input name="group1" onclick="controller('1');" type="radio" id="test1" />
+      <label for="test1">Puzzles</label>
+      <input name="group1" onclick="controller('2');" type="radio" id="test2" />
+      <label for="test2">C Aptitude</label>
+	  <input name="group1" onclick="controller('3');" type="radio" id="test3" />
+      <label for="test3">Data Structures</label>
+      <input name="group1" onclick="controller('4');" type="radio" id="test4" />
+      <label for="test4">DBMS</label>
+	  <input name="group1" onclick="controller('5');" type="radio" id="test5" />
+      <label for="test5">OS</label>
+      <input name="group1" onclick="controller('6');" type="radio" id="test6" />
+      <label for="test6">Software Engineering</label>
+	  <input name="group1" onclick="controller('7');" type="radio" id="test7" />
+      <label for="test7">C Technical</label>
+  </div>
+  </div></div></div> 
+  <br/>
+    <br/>
+	  <br/>
+	    <br/>
  <center>
+ <br/>
  <button  id="saveForm" style="text-align:center;" name="saveForm" class="btTxt submit btn-large waves-effect waves-light align-center orange lighten-1"
     type="submit" value="Submit" name="action">Submit
     <i class="material-icons right">send</i>
